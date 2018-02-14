@@ -23,8 +23,8 @@ public class FileCopyDemo {
 		int i = 0;
 		while ((i = in.read(bs, 0, bs.length)) != -1) {
 			out.write(bs, 0, i);
-			out.flush();
 		}
+		out.flush();
 
 		in.close();
 		out.close();
